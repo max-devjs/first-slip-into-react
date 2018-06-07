@@ -8,7 +8,7 @@ const ReposList = props => {
       {props.repos.map(
         repo => (
           
-          <li key={repo.id}>{repo.name} - <a href='{repo.url}'>{repo.url}</a></li>
+          <li key={repo.id}>{repo.name} - <a href={repo.html_url}>{repo.html_url}</a></li>
         )
       )}
     </ul>
